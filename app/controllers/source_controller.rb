@@ -3,6 +3,6 @@ require 'net/https'
 
 class SourceController < ApplicationController
   def get
-    @source = Net::HTTP.get params[:site]
+    @source = Net::HTTP.get URI(params[:site])
   end
 end
