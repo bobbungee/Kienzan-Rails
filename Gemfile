@@ -8,6 +8,10 @@ gem 'rails', '3.0.10'
 gem 'jquery-rails'
 gem 'thin'
 
+group :production do
+  gem 'pg'
+end
+
 group :development do
   gem 'sqlite3'
 end
